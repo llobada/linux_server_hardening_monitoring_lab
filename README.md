@@ -64,6 +64,7 @@ sudo usermod -aG sudo user
 ---
 
 ## 🔑 Step 4: SSH Hardening
+**Secure SSH** configuration including disabling root login and enforcing safer access practices.
 
 ### 🔐 SSH Configuration
 - Disabled root login
@@ -76,12 +77,13 @@ sudo nano /etc/ssh/sshd_config
 
 ![SSH Config](Images/ssh_Config.png)
 
-### ✅ SSH Login Test
-![SSH Login](Images/SSh-Login.png)
 
 ---
 
 ## 🔥 Step 5: Firewall (UFW)
+
+**UFW (Uncomplicated Firewall)** Used to restrict network access and allow only necessary services such as SSH.
+
 - Enabled UFW
 - Allowed SSH only
 
@@ -95,8 +97,8 @@ sudo ufw enable
 ---
 
 ## 🚫 Step 6: Fail2Ban Protection
-- Installed Fail2Ban
-- Protected SSH from brute-force attacks
+**Fail2Ban** Protects the SSH service by detecting brute-force attempts and automatically banning malicious IP addresses.
+
 
 ```bash
 sudo apt install fail2ban -y
@@ -116,11 +118,12 @@ To verify this, I checked the Fail2Ban service status and the SSH jail status.
 ## 📈 Step 7: System Monitoring
 
 ### 🖥️ htop
-- Monitored CPU & RAM usage
+Real-time monitoring of CPU and RAM usage.
 
 ![htop](Images/htop.png)
 
 ### 💾 Disk Usage
+Disk usage monitoring to track storage availability.
 ```bash
 df -h
 ```
@@ -132,8 +135,7 @@ df -h
 ## 📜 Step 8: Log Analysis
 
 ### 📘 journalctl
-- Reviewed system logs
-- Filtered SSH service logs
+Used for log analysis and filtering SSH authentication events for security monitoring.
 
 ```bash
 journalctl -xe
