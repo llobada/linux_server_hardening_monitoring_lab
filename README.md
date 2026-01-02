@@ -152,8 +152,9 @@ This allowed me to:
 
 ```bash
 journalctl | grep sshd
-
+```
 ![Journalctl SSH](Images/JournalCtl_sshd.png)
+
 
 ### 🔎 Authentication Logs
 - Checked `/var/log/auth.log`
