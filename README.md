@@ -1,6 +1,6 @@
 # 🔐 Linux Server Hardening & Monitoring Lab
 
-> **Author:** Obada Darwish 
+> **Author:** Obad Darwish 
 > 
 > **Environment:** Kali Linux (Host) + Ubuntu/Lubuntu (Guest VM)
 > 
