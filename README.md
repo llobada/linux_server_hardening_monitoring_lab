@@ -62,7 +62,18 @@ sudo usermod -aG sudo user
 ![Add User](Images/Add-user'.png)
 
 ---
+## 🔑 SSH Hardening & Fail2Ban Automation
 
+I have created an **automation script** that performs the following hardening steps automatically to simplify the process of securing the server.  
+You can still follow the manual steps described below if you want to apply them individually.
+
+### 📂 Automation Script
+- File: `secure-linux.sh`
+- Runs all hardening steps:
+  - SSH hardening
+  - UFW firewall setup
+  - Fail2Ban installation and activation
+---
 ## 🔑 Step 4: SSH Hardening
 **Secure SSH** configuration including disabling root login and enforcing safer access practices.
 
